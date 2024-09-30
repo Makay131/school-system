@@ -1,0 +1,19 @@
+.card-container {
+    @apply rounded-2xl p-4 min-w-[200px] odd:bg-schoolify-purple even:bg-schoolify-yellow;
+}
+
+.card-header {
+    @apply flex justify-between items-center;
+}
+
+.card-header__year {
+    @apply text-[10px] bg-white px-2 py-1 rounded-full text-green-600;
+}
+
+.card-detail__amount {
+    @apply text-2xl font-semibold my-4;
+}
+
+.card-detail__type {
+    @apply capitalize text-sm font-medium text-gray-500;
+}

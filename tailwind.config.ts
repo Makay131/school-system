@@ -9,8 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "schoolify-sky": "#c3ebfa",
+        "schoolify-sky-light": "#edf9fd",
+        "schoolify-purple": "#cfceff",
+        "schoolify-purple-light": "#f1f0ff",
+        "schoolify-yellow": "#fae27c",
+        "schoolify-yellow-light": "#fefce8",
       },
     },
   },

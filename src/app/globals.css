@@ -2,17 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   color: var(--foreground);
@@ -24,4 +13,19 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.react-calendar {
+  width: 100% !important;
+  border: none !important;
+  font-family: "Inter", sans-serif !important;
+}
+
+.react-calendar__navigation__label__labelText {
+  font-weight: 600 !important;
+}
+
+.react-calendar__tile--active {
+  background-color: #c3ebfa !important;
+  color: black !important;
 }
