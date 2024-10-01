@@ -126,12 +126,12 @@ export const Menu = () => {
             {i.title}
           </h2>
           {i.items.map((item) => {
-            if (true) {
+            if (item.visible.includes(role)) {
               return (
                 <li key={item.label} className="list-none">
                 <Link
                   href={item.href}
-                  className="flex items-center justify-center lg:justify-start gap-4 text-gray-500 py-2 md:px-2 rounded-md hover:bg-lamaSkyLight"
+                  className="flex items-center justify-center lg:justify-start gap-4 text-gray-500 py-2 md:px-2 rounded-md hover:bg-schoolify-sky-light"
                 >
                   <Image src={item.icon} alt="" width={20} height={20} />
                   <span className="hidden lg:block">{item.label}</span>
