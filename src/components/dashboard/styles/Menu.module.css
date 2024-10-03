@@ -1,0 +1,19 @@
+.menu-container {
+    @apply mt-4 text-sm;
+}
+
+.menu-nav {
+    @apply flex flex-col gap-2;
+}
+
+.menu-title {
+    @apply hidden lg:block text-gray-400 font-light my-4;
+}
+
+.menu-list-item {
+    @apply flex items-center justify-center lg:justify-start gap-4 text-gray-500 py-2 md:px-2 rounded-md hover:bg-schoolify-sky-light;
+}
+
+.menu-list-item-title {
+    @apply hidden lg:block;
+}

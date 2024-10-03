@@ -2,6 +2,8 @@ import { role } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
 
+import Styles from "./styles/Menu.module.css";
+
 const menuItems = [
     {
       title: "MENU",
@@ -119,22 +121,22 @@ const menuItems = [
 
 export const Menu = () => {
   return (
-    <div className="mt-4 text-sm">
+    <div className={Styles["menu-container"]}>
       {menuItems.map((i) => (
-        <nav className="flex flex-col gap-2" key={i.title}>
-          <h2 className="hidden lg:block text-gray-400 font-light my-4">
+        <nav className={Styles["menu-nav"]} key={i.title}>
+          <h2 className={Styles["menu-title"]}>
             {i.title}
           </h2>
           {i.items.map((item) => {
             if (item.visible.includes(role)) {
               return (
-                <li key={item.label} className="list-none">
+                <li key={item.label} className={Styles["list-none"]}>
                 <Link
                   href={item.href}
-                  className="flex items-center justify-center lg:justify-start gap-4 text-gray-500 py-2 md:px-2 rounded-md hover:bg-schoolify-sky-light"
+                  className={Styles["menu-list-item"]}
                 >
                   <Image src={item.icon} alt="" width={20} height={20} />
-                  <span className="hidden lg:block">{item.label}</span>
+                  <span className={Styles["menu-list-item-title"]}>{item.label}</span>
                 </Link>
                 </li>
               );

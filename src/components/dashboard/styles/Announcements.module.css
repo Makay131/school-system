@@ -1,0 +1,39 @@
+.anns-container {
+    @apply bg-white p-4 rounded-md;
+}
+
+.anns-title-container {
+    @apply flex items-center justify-between;
+}
+
+.anns-title {
+    @apply text-xl font-semibold;
+}
+
+.anns-title-detail {
+    @apply text-xs text-gray-400;
+}
+
+.anns-content-container {
+    @apply flex flex-col gap-4 mt-4;
+}
+
+.anns-content-container__sub {
+    @apply bg-schoolify-sky-light rounded-md p-4;
+}
+
+.anns-content-container__sub--top {
+    @apply flex items-center justify-between;
+}
+
+.anns-content-title {
+    @apply font-semibold;
+}
+
+.anns-content-title-detail {
+    @apply text-xs text-gray-400 bg-white rounded-md px-1 py-1;
+}
+
+.anns-content-detail {
+    @apply text-sm text-gray-400 mt-1;
+}

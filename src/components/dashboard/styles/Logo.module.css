@@ -1,0 +1,7 @@
+.logo-container {
+    @apply flex items-center justify-center lg:justify-start gap-2;
+}
+
+.logo-title {
+    @pply hidden lg:block font-bold;
+}

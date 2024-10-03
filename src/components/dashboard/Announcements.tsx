@@ -1,17 +1,19 @@
+import Styles from "./styles/Announcements.module.css";
+
 const Announcements = () => {
   return (
-    <div className="bg-white p-4 rounded-md">
-        <div className="flex items-center justify-between">
-            <h3 className="text-xl font-semibold">Announcements</h3>
-            <span className="text-xs text-gray-400">View All</span>
+    <div className={Styles["anns-container"]}>
+        <div className={Styles["anns-title-container"]}>
+            <h3 className={Styles["anns-title"]}>Announcements</h3>
+            <span className={Styles["anns-title-detail"]}>View All</span>
         </div>
-        <div className="flex flex-col gap-4 mt-4">
-            <div className="bg-schoolify-sky-light rounded-md p-4">
-                <div className="flex items-center justify-between">
-                    <h4 className="font-semibold">Lorem ipsum dolor sit amet consectetur</h4>
-                    <span className="text-xs text-gray-400 bg-white rounded-md px-1 py-1">2025-01-01</span>
+        <div className={Styles["anns-content-container"]}>
+            <div className={Styles["anns-content-container__sub"]}>
+                <div className={Styles["anns-content-container__sub--top"]}>
+                    <h4 className={Styles["anns-content-title"]}>Lorem ipsum dolor sit amet consectetur</h4>
+                    <span className={Styles["anns-content-title-detail"]}>2025-01-01</span>
                 </div>
-                <p className="text-sm text-gray-400 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, fugiat.</p>
+                <p className={Styles["anns-content-detail"]}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, fugiat.</p>
             </div>
         </div>
     </div>
