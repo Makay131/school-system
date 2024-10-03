@@ -130,7 +130,7 @@ export const Menu = () => {
           {i.items.map((item) => {
             if (item.visible.includes(role)) {
               return (
-                <li key={item.label} className={Styles["list-none"]}>
+                <li key={item.label} className="list-none">
                 <Link
                   href={item.href}
                   className={Styles["menu-list-item"]}
